@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%2018 assignment of Speech & Audio Processing & Recognition
+%2018 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%BIN JIANG 6519680
+%BIN JIANG 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Important Variants:
 %alpha 
@@ -118,7 +118,7 @@ end
 fprintf('\n');     
 
 %% 5.Occupation likelihoods
-gama = (alpha.*beta)./Pf; %¦Ã_t(i)= [¦Á_t(i)*¦Â_t(i)]/P(O|¦Ë)
+gama = (alpha.*beta)./Pf; %Î³_t(i)= [Î±_t(i)*Î²_t(i)]/P(O|Î»)
 
 fprintf('Occupation likelihood:\n')   
 fprintf('Row(time) Column(state)\n')
@@ -151,7 +151,7 @@ state_33= normpdf(x,u(3),sqrt(var(3)) );
 plot(x,state_11,'--')
 plot(x,state_22,'--')
 plot(x,state_33,'--')
-legend('State 1','State 2','State 3','State 1 £¨training£©','State 2 £¨training£©','State 3 £¨training£©');
+legend('State 1','State 2','State 3','State 1 ï¼ˆtrainingï¼‰','State 2 ï¼ˆtrainingï¼‰','State 3 ï¼ˆtrainingï¼‰');
 c = 'C:\Users\jiang\Desktop\CVML\Sem1-Speech & Audio Processing & Recognition\Coursework2-JAN 8 TUE';
 saveas(gcf,['normal','jpeg'])
 % for i = 1: length(b(:,1))
@@ -179,7 +179,7 @@ disp(B); %% print the output probability densities b_i(o_t) for each time frame 
 x=x-2;
 y=y-2; %processed size of real transition matrix
 T = length(b(1,:));
-epsilon=zeros(x,y,T); % x £ºi   y £ºj   z£ºt
+epsilon=zeros(x,y,T); % x ï¼ši   y ï¼šj   zï¼št
 a = [state_tran( (2:end-1),(2:end-1) )];%processed state_tran 
 p=Pf; %forward or backward probability
  for t = 2:T
